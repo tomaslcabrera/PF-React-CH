@@ -1,0 +1,90 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: auto;
+    padding: 0 20px;
+    height: fit-content;
+    background-color: hsl(0, 0%, 100%);
+  }
+
+  .navbar-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    max-width: 350px;
+  }
+  
+  .navbar-logo {
+    text-decoration: none;
+    color: hsl(221, 56%, 31%);
+    font-size: clamp(10px, 2.5vw, 35px);
+    width: fit-content;
+    margin-right: 10px;
+  }
+  
+  .subtitle{
+    font-size: 20px;
+  }
+  
+  .logo-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+  }
+  
+  .shop-cart {
+    height: 40px;
+    border-radius: 10px;
+  }
+  
+  
+  .invert:hover {
+    transition: all 0.7s ease-in-out;
+    filter: invert(100%);
+  }
+  
+  .navbar-logo:hover {
+    color: red;
+    transition: all 0.1s;
+  }
+  
+  .button {
+    border: none;
+    background-color: transparent;
+    padding: 2px 8px;
+    border-radius: 5px;
+  }
+  
+  .button-cantidad{
+    border: none;
+    background-color: transparent;
+    font-size: 14px;
+    font-weight: bolder;
+    padding: 2px 8px;
+    border-radius: 5px;
+  }
+  
+  .button-cantidad:active{
+    transition: all 0.1s ease-in-out;
+    background-color: hsl(221, 56%, 31%);
+    color: white;
+  }
+  
+  .button:hover {
+    transition: all 0.7s ease-in-out;
+    background-color: hsl(221, 56%, 31%);
+    color: white;
+  }
+  
+  .search {
+    text-align: center;
+    margin: 0 5px;
+  }
+
+  .search-bar-container {
+    display: flex;
+    align-items: center;
+  }
