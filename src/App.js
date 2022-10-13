@@ -1,15 +1,22 @@
 import React from 'react';
 import './App.css';
-import MainSection from './components/mainsection/MainSection';
+import ItemListContainer from './components/itemListContainer/ItemListContainer';
 import Navbar from './components/Navbar/Navbar';
-
-
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 const App=()=> {
   return (
   <> 
-  <Navbar/>
-  <MainSection/>
+  <BrowserRouter>
+    <Navbar/>
+    <Routes>
+      <Route path='/' element={<ItemListContainer />}/>
+      <Route path='/category/:categoryId' element={<ItemListContainer />}/>
+      <Route path='/detail/:productId' element={ <ItemDetailContainer />} />
+      
+    </Routes>
+  </BrowserRouter>
   </>
   );
 }

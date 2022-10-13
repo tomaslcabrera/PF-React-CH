@@ -1,7 +1,7 @@
 import React from 'react';
-import Categories from './Categories';
-import SearchBar from './SearchBar';
+import Categories from '../Categories/Categories';
 import './Navbar.css';
+import CartWidget from '../CartWidget/CartWidget';
 
 
 const Navbar = () => {
@@ -12,7 +12,7 @@ return (
             <a className='navbar-logo titles' href='http://localhost:3000/'>Kaizoku</a>
         </div>
         <Categories/>
-        <SearchBar busqueda="Buscar Productos" />
+        <CartWidget/>
     </nav>
 
 </>
