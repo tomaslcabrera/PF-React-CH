@@ -1,6 +1,6 @@
-import React, {useState} from 'react';
+import {useState} from 'react';
 
-const Counter = ({stock=10, initial = 1, onAdd})=> {
+const Counter = ({stock=0, initial = 1, onAdd})=> {
     const [quantity, setQuantity] = useState(initial)
  
     const increment = () => {
@@ -16,14 +16,14 @@ const Counter = ({stock=10, initial = 1, onAdd})=> {
     }
  
     return(
-        <div className='Counter'>          
-             <div className='Controls'>
-                 <button className="Button" onClick={decrement}>-</button>
-                 <h4 className='Number'>{quantity}</h4>
-                 <button className="Button" onClick={increment}>+</button>
+        <div>          
+             <div>
+                 <button onClick={decrement}>-</button>
+                 <h4>{quantity}</h4>
+                 <button onClick={increment}>+</button>
              </div>
              <div>
-                 <button className="Button" onClick={() => onAdd(quantity)}>Agregar al carrito</button>
+                 <button onClick={() => onAdd(quantity)}>Agregar al carrito</button>
              </div>
         </div>
     )

@@ -15,6 +15,18 @@
     width: 100%;
     max-width: 350px;
   }
+
+  .navbar-cat-component{
+    border: none;
+    background-color: transparent;
+    padding: 2px 8px;
+    border-radius: 5px;
+  }
+  .navbar-cat-component:hover{
+    transition: all 0.7s ease-in-out;
+    background-color: hsl(0, 90%, 42%);
+    color: white;
+  }
   
   .navbar-logo {
     text-decoration: none;
